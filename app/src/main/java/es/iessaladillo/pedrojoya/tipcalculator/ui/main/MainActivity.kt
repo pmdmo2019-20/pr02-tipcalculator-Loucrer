@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
             override fun beforeTextChanged(p0: CharSequence, p1: Int, p2: Int, p3: Int) {}
 
             override fun onTextChanged(p0: CharSequence, p1: Int, p2: Int, p3: Int) {
-                if (validateField(p0)) {
+                if (validateField(p0) && validateNotZero(p0)) {
                     settleDinners(p0)
                 } else {
                     txtDiners.setText(getText(R.string.defaultValueDiners))
@@ -164,12 +164,19 @@ class MainActivity : AppCompatActivity() {
 
     private fun validateField(p0: CharSequence): Boolean {
         var validate = true
-        if (p0.toString().isEmpty()) {
+        if (p0.toString().isEmpty() || !validateNotDot(p0)) {
             validate = false
         }
         return validate
     }
 
+    private fun validateNotDot(p0: CharSequence): Boolean {
+        return !(p0.startsWith("."))
+    }
+
+    private fun validateNotZero(p0: CharSequence): Boolean {
+        return p0.toString().toInt() >= 1
+    }
 
     private fun resetValuesDefaulFieldsDiners() {
         txtDiners.setText(getText((R.string.defaultValueDiners)))
