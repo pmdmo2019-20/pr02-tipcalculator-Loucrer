@@ -8,4 +8,12 @@
     <string name="lblPer_diner">Per diner</string>
     <string name="lblRounded">Rounded</string>
     <string name="txtReset">RESET</string>
+    <string name="showEuro">€</string>
+    <string name="textDefault">0.00</string>
+    <string name="defaultValueBill">0.00</string>
+    <string name="defaultValueTip">0.00</string>
+    <string name="defaultValueDiners">1</string>
+    <string name="lblIconPorcentage">%</string>
+    <string name="textEmplyforDiner">1</string>
+    <string name="textDefaultPorcentage">10.00</string>
 </resources>

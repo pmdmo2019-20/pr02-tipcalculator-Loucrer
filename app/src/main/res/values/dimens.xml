@@ -2,5 +2,10 @@
 <resources>
     <dimen name="main_margin">8dp</dimen>
     <dimen name="main_inter_margin">2dp</dimen>
-    <dimen name="layautPadding">10dp</dimen>
+    <dimen name="zero_width">0dp</dimen>
+    <dimen name="sizePorcentage">20sp</dimen>
+    <dimen name="sizeWidthBtn">69dp</dimen>
+    <dimen name="sizeHeightBtn">35dp</dimen>
+    <dimen name="widthEuro">22dp</dimen>
+    <dimen name="heightEuro">17dp</dimen>
 </resources>
